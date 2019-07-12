@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 200px 1fr;
+    grid-gap:10px 10px;
+    height: 100vh;
+    grid-template-areas: "header header" "left contenido" "footer footer";
+}
+.item {
+    border: 1px solid black;
+    background:lightblue;
+}
+.header {
+    grid-area: header
+}
+.contenido {
+    grid-area: contenido;
+}
+.left {
+    grid-area: left;
+}
+.footer {
+    grid-area: footer;
+}
