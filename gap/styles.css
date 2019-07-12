@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+}
+.container {
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-rows: 150px 130px; */
+    grid-template: 150px 300px / 700px 200px 100px; /* Aqui hay una fila que no tengo control 
+                                                     que se añadio ya que no tenia mas espacio*/
+    grid-gap: 20px 50px;                                                     
+}
+.item {
+    background: lightblue;
+    border: 1px solid red;
+    padding: 10px;
+ 
+}
+.item:nth-of-type(4) {
+
+    background: blue;
+    overflow: auto;
+    display: grid;
+    grid-template: 50px 50px 50px /200px 200px 200px;   
+    grid-gap: 20px 50px;
+}
+.item .item {
+    background: yellow;
+
+}
